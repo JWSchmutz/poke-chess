@@ -1,0 +1,7 @@
+.bench {
+  height: 15vh;
+  background-color: #282c34;
+  display: flex;
+  box-sizing: border-box;
+  border: rgb(156, 103, 59) 2px solid;
+}

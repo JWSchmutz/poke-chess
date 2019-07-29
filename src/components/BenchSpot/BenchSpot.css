@@ -1,0 +1,9 @@
+.bench-spot {
+  background: url(../../images/benchspot.PNG) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 10%;
+  border: rgb(131, 83, 43) 2px solid;
+}

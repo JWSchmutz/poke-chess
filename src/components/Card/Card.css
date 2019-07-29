@@ -1,0 +1,17 @@
+.card-title-header {
+  text-align: left;
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+.top-span {
+  float: right;
+  margin-right: 10px;
+}
+.bench-pkmn-img {
+  height: 20vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

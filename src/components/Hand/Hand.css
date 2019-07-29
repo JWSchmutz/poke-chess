@@ -1,0 +1,10 @@
+.hand {
+  box-sizing: border-box;
+  height: 25vh;
+  background-color: #282c34;
+  border: 20px solid red;
+  border-image-source: url(../../images/pokeball-frame.png);
+  border-image-slice: 72;
+  border-image-repeat: round;
+  display: flex;
+}
