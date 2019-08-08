@@ -1,30 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.board-bg {
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .board {
-  height: 60vh;
-  width: 100vw;
+  transform: rotateX(40deg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+}
+
+.board-piece {
+  width: auto;
+}
+
+.board-spot {
+  height: 10vh;
+  width: 16%;
+  border: rgb(156, 103, 59, 0.3) 2px solid;
 }
 .App-header {
-  background-color: #282c34;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  perspective: 800px;
+  height: 65vh;
 }

@@ -7,10 +7,18 @@ const style = {
 };
 
 const BenchSpot = props => {
+  console.log(props.onDrop);
+
   if (props.name) {
     return (
       <div className="bench-spot">
-        <img src={props.image} alt={props.name} style={style} />
+        <img
+          src={props.image}
+          alt={props.name}
+          style={style}
+          onDragStart={e => props.onDragStart(e, props.name)}
+          onDragEnd={e => props.onDragEnd(e, props.counter)}
+        />
       </div>
     );
   } else {

@@ -1,133 +1,351 @@
 var pokemon = {
   pikachu: {
-    name: "Pikachu",
+    name: "pikachu",
     hp: 35,
     attack: 6,
     image: require("./images/pikachu.png"),
     type: require("./images/electric.jpg"),
-    role: "A",
-    numRequired: 4,
-    evolvesTo: "Raichu"
+    role: "rat",
+    numRequired: 3,
+    price: 1,
+    evolvesTo: "raichu",
+    height: "70%"
   },
   raichu: {
-    name: "Raichu",
+    name: "raichu",
     hp: 60,
     attack: 9,
     image: require("./images/raichu.png"),
     type: require("./images/electric.jpg"),
-    role: "A",
+    role: "rat",
     numRequired: Infinity,
-    evolvesTo: null
+    evolvesTo: null,
+    height: "90%"
   },
+  raikou: {
+    name: "raikou",
+    hp: 90,
+    attack: 11,
+    image: require("./images/raikou.png"),
+    type: require("./images/electric.jpg"),
+    role: "dog",
+    price: 4,
+    numRequired: Infinity,
+    evolvesTo: null,
+    height: "90%"
+  },
+  zapdos: {
+    name: "zapdos",
+    hp: 90,
+    attack: 13,
+    image: require("./images/zapdos.png"),
+    type: require("./images/electric.jpg"),
+    role: "bird",
+    price: 5,
+    numRequired: Infinity,
+    evolvesTo: null,
+    height: "90%"
+  },
+  shinx: {
+    name: "shinx",
+    hp: 45,
+    attack: 7,
+    image: require("./images/shinx.png"),
+    type: require("./images/electric.jpg"),
+    role: "dog",
+    price: 2,
+    numRequired: 2,
+    evolvesTo: "luxio",
+    height: "70%"
+  },
+  luxio: {
+    name: "luxio",
+    hp: 60,
+    attack: 9,
+    image: require("./images/luxio.png"),
+    type: require("./images/electric.jpg"),
+    role: "dog",
+    numRequired: 2,
+    evolvesTo: "luxray",
+    height: "80%"
+  },
+  luxray: {
+    name: "luxray",
+    hp: 80,
+    attack: 12,
+    image: require("./images/luxray.png"),
+    type: require("./images/electric.jpg"),
+    role: "dog",
+    numRequired: Infinity,
+    evolvesTo: null,
+    height: "90%"
+  },
+
   charmander: {
-    name: "Charmander",
+    name: "charmander",
     hp: 39,
     attack: 6,
     image: require("./images/charmander.png"),
     type: require("./images/fire.jpg"),
-    role: "SA",
+    role: "dragon",
     numRequired: 3,
-    evolvesTo: "Charmeleon"
+    price: 1,
+    evolvesTo: "charmeleon",
+    height: "75%"
   },
   charmeleon: {
-    name: "Charmeleon",
+    name: "charmeleon",
     hp: 58,
     attack: 8,
     image: require("./images/charmeleon.png"),
     type: require("./images/fire.jpg"),
-    role: "SA",
+    role: "dragon",
     numRequired: 3,
-    evolvesTo: "charizard"
+    evolvesTo: "charizard",
+    height: "85%"
   },
   charizard: {
-    name: "Charizard",
+    name: "charizard",
     hp: 78,
     attack: 11,
     image: require("./images/charizard.png"),
     type: require("./images/fire.jpg"),
-    role: "SA",
+    role: "dragon",
     numRequired: Infinity,
-    evolvesTo: null
+    evolvesTo: null,
+    height: "100%"
+  },
+  entei: {
+    name: "entei",
+    hp: 115,
+    attack: 12,
+    image: require("./images/entei.png"),
+    type: require("./images/fire.jpg"),
+    role: "dog",
+    numRequired: Infinity,
+    price: 6,
+    evolvesTo: null,
+    height: "100%"
+  },
+  growlithe: {
+    name: "growlithe",
+    hp: 55,
+    attack: 7,
+    image: require("./images/growlithe.png"),
+    type: require("./images/fire.jpg"),
+    role: "dog",
+    numRequired: 2,
+    price: 3,
+    evolvesTo: null,
+    height: "80%"
+  },
+  arcanine: {
+    name: "arcanine",
+    hp: 90,
+    attack: 11,
+    image: require("./images/arcanine.png"),
+    type: require("./images/fire.jpg"),
+    role: "dog",
+    numRequired: Infinity,
+    price: 6,
+    evolvesTo: null,
+    height: "100%"
+  },
+  moltres: {
+    name: "moltres",
+    hp: 90,
+    attack: 13,
+    image: require("./images/moltres.png"),
+    type: require("./images/fire.jpg"),
+    role: "bird",
+    numRequired: Infinity,
+    price: 5,
+    evolvesTo: null,
+    height: "90%"
   },
   bulbasaur: {
-    name: "Bulbasaur",
+    name: "bulbasaur",
     hp: 45,
     attack: 7,
     image: require("./images/bulbasaur.png"),
     type: require("./images/grass.jpg"),
-    role: "AA",
-    numRequired: 3,
-    evolvesTo: "Ivysaur"
+    role: "drainer",
+    numRequired: 2,
+    price: 2,
+    evolvesTo: "ivysaur",
+    height: "70%"
   },
   ivysaur: {
-    name: "Ivysaur",
+    name: "ivysaur",
     hp: 60,
     attack: 8,
     image: require("./images/ivysaur.png"),
     type: require("./images/grass.jpg"),
-    role: "AA",
-    numRequired: 3,
-    evolvesTo: "Ivysaur"
+    role: "drainer",
+    numRequired: 2,
+    evolvesTo: "ivysaur",
+    height: "85%"
   },
   venusaur: {
-    name: "Venusaur",
+    name: "venusaur",
     hp: 80,
     attack: 10,
     image: require("./images/venusaur.png"),
     type: require("./images/grass.jpg"),
-    role: "AA",
+    role: "drainer",
     numRequired: Infinity,
-    evolvesTo: null
+    evolvesTo: null,
+    height: "100%"
+  },
+  genesect: {
+    name: "genesect",
+    hp: 71,
+    attack: 12,
+    image: require("./images/genesect.png"),
+    type: require("./images/grass.jpg"),
+    role: "tank",
+    numRequired: Infinity,
+    price: 3,
+    evolvesTo: null,
+    height: "70%"
+  },
+  scyther: {
+    name: "scyther",
+    hp: 70,
+    attack: 11,
+    image: require("./images/scyther.png"),
+    type: require("./images/grass.jpg"),
+    role: "tank",
+    numRequired: 2,
+    price: 3,
+    evolvesTo: "scizor",
+    height: "70%"
+  },
+  scizor: {
+    name: "scizor",
+    hp: 70,
+    attack: 13,
+    image: require("./images/scizor.png"),
+    type: require("./images/grass.jpg"),
+    role: "tank",
+    numRequired: Infinity,
+    evolvesTo: null,
+    height: "90%"
+  },
+  celebi: {
+    name: "celebi",
+    hp: 100,
+    attack: 10,
+    image: require("./images/celebi.png"),
+    type: require("./images/grass.jpg"),
+    role: "mentalist",
+    numRequired: Infinity,
+    price: 4,
+    evolvesTo: null,
+    height: "70%"
   },
   squirtle: {
-    name: "Squirtle",
+    name: "squirtle",
     hp: 44,
+    attack: 5,
     image: require("./images/squirtle.png"),
     type: require("./images/water.jpg"),
-    role: "D",
+    role: "tank",
     numRequired: 3,
-    evolvesTo: "Wartortle"
+    price: 1,
+    evolvesTo: "wartortle",
+    height: "70%"
   },
   wartortle: {
-    name: "Wartortle",
+    name: "wartortle",
     hp: 59,
     attack: 6,
     image: require("./images/wartortle.png"),
     type: require("./images/water.jpg"),
-    role: "D",
+    role: "tank",
     numRequired: 3,
-    evolvesTo: "Wartortle"
+    evolvesTo: "blastoise",
+    height: "85%"
   },
   blastoise: {
-    name: "Blastoise",
+    name: "blastoise",
     hp: 79,
     attack: 9,
     image: require("./images/blastoise.png"),
     type: require("./images/water.jpg"),
-    role: "D",
+    role: "tank",
     numRequired: Infinity,
-    evolvesTo: null
+    evolvesTo: null,
+    height: "100%"
   },
-
+  articuno: {
+    name: "articuno",
+    hp: 90,
+    attack: 13,
+    image: require("./images/articuno.png"),
+    type: require("./images/water.jpg"),
+    role: "bird",
+    price: 5,
+    numRequired: Infinity,
+    evolvesTo: null,
+    height: "90%"
+  },
+  suicune: {
+    name: "suicune",
+    hp: 100,
+    attack: 12,
+    image: require("./images/suicune.png"),
+    type: require("./images/water.jpg"),
+    role: "bird",
+    price: 6,
+    numRequired: Infinity,
+    evolvesTo: null,
+    height: "90%"
+  },
+  magikarp: {
+    name: "magikarp",
+    hp: 20,
+    attack: 1,
+    image: require("./images/magikarp.png"),
+    type: require("./images/water.jpg"),
+    role: "dragon",
+    price: 1,
+    numRequired: 5,
+    evolvesTo: "gyarados",
+    height: "90%"
+  },
+  gyarados: {
+    name: "gyarados",
+    hp: 95,
+    attack: 13,
+    image: require("./images/gyarados.png"),
+    type: require("./images/water.jpg"),
+    role: "dragon",
+    numRequired: Infinity,
+    evolvesTo: null,
+    height: "100%"
+  },
   rattata: {
-    name: "Rattata",
+    name: "rattata",
     hp: 30,
     attack: 6,
     image: require("./images/rattata.png"),
     type: require("./images/normal.jpg"),
     role: "PA",
     numRequired: 2,
-    evolvesTo: "Raticate"
+    evolvesTo: "raticate",
+    height: "70%"
   },
   raticate: {
-    name: "Raticate",
+    name: "raticate",
     hp: 55,
     attack: 6,
     image: require("./images/raticate.png"),
     type: require("./images/normal.jpg"),
     role: "PA",
     numRequired: Infinity,
-    evolvesTo: null
+    evolvesTo: null,
+    height: "85%"
   }
 };
 

@@ -11,6 +11,9 @@ const Bench = props => {
             key={space.counter}
             name={space.pokemon.name}
             image={space.pokemon.image}
+            onDragStart={props.onDragStart}
+            onDragEnd={props.onDragEnd}
+            counter={space.counter}
           />
         ) : (
           <BenchSpot

@@ -1,26 +1,39 @@
 import React from "react";
 import "./Hand.css";
 import Card from "../Card/Card";
+import Image from "../../images/release.jpg";
 
 const Hand = props => {
-  let i = 0;
   return (
     <div className="hand">
+      <div className="handSpot" onDrop={e => props.onDrop(e)}>
+        <h4 className="info">₱:100</h4>
+        <h4 className="info"> Energy:100</h4>
+      </div>
       {props.cards.map(card => {
-        i++;
-        return (
+        return card.name ? (
           <Card
+            className="handSpot"
             name={card.name}
-            hp={card.hp}
             image={card.image}
             type={card.type}
-            role={card.role}
             numRequired={card.numRequired}
-            key={i.toString()}
+            key={card.counter}
             onDragStart={e => props.onDragStart(e, card.name)}
+            onDragEnd={e => props.onDragEnd(e, card.counter)}
           />
+        ) : (
+          <Card className="handSpot" type={card.type} />
         );
       })}
+      <div
+        className="handSpot release"
+        onDrop={e => props.onDrop(e)}
+        onDragLeave={e => props.onDragLeave(e)}
+        onDragOver={e => props.onDragOver(e)}
+      >
+        <h3 className="info shadow">Release Pokemon</h3>
+      </div>
     </div>
   );
 };
