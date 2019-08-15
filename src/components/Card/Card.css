@@ -1,6 +1,7 @@
 .card-title-header {
-  text-align: left;
   margin: 0px 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .top-span {

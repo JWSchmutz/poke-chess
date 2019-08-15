@@ -7,8 +7,6 @@ const style = {
 };
 
 const BenchSpot = props => {
-  console.log(props.onDrop);
-
   if (props.name) {
     return (
       <div className="bench-spot">

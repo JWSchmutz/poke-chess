@@ -11,6 +11,7 @@
 
 .info {
   color: white;
+  margin-top: 0px;
 }
 
 .shadow {
@@ -20,4 +21,18 @@
 .release {
   background: url("../../images/release.jpg") center center;
   border: 2px solid;
+}
+
+.image-holder {
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  margin-top: 5px;
+  border-radius: 3px;
+  border: gray solid 2px;
+  width: 50%;
+}
+.refresh-image {
+  width: 40px;
+  margin-top: 5px;
 }

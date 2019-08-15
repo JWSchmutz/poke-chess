@@ -49,3 +49,8 @@
   perspective: 800px;
   height: 65vh;
 }
+
+.pokeball {
+  position: relative;
+  top: 3px;
+}
