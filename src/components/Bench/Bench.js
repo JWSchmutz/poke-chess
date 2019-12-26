@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Bench.css";
 import BenchSpot from "../BenchSpot/BenchSpot";
-import pokemonData from "../../data/pokemonData";
+// import pokemonData from "../../data/pokemonData";
 import dragOver from "../../lib/utils";
 
 const onDragStartFromBench = (ev, id) => {

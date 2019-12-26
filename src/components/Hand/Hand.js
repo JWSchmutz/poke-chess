@@ -87,6 +87,7 @@ class Hand extends Component {
               className="refresh-image"
               src={require("../../images/refresh.png")}
               onClick={this.onRefreshClick}
+              alt="refresh shop"
             />
           </div>
 

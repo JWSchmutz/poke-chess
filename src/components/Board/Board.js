@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import board from "../../images/board.png";
-import pokemonData from "../../data/pokemonData";
+// import pokemonData from "../../data/pokemonData";
 import dragOver from "../../lib/utils";
 class Board extends Component {
   constructor(props) {
@@ -165,9 +165,7 @@ class Board extends Component {
                 style={boardSpot.character.height}
                 alt={boardSpot.character}
                 className="board-piece"
-                src={require(`../../images/${
-                  boardSpot.character.name
-                }-back.gif`)}
+                src={require(`../../images/${boardSpot.character.name}-back.gif`)}
                 onDragStart={e =>
                   this.onDragStartFromBoard(e, boardSpot.character.name)
                 }
